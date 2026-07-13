@@ -264,14 +264,23 @@ Premium **wellness brand** feel — NOT bright colours. Colours must communicate
 
 > Newest entries at the top. Format: `YYYY-MM-DD — what changed — ✅/🟡/⬜`
 
-### 2026-07-13 (later)
-- ✅ **Built a DEMO homepage** to show the client the look & feel — `demo/index.html` (self-contained static page, no build step, no cost)
-  - Premium wellness design: palette (forest/sage/beige/ivory/gold) + fonts (Playfair Display + Poppins via free Google Fonts)
-  - Real content: hero copy ("Heal the Root Cause…"), her photos, credential trust strip, 6 service cards, About + creds, Dhruva authority quote, FAQ accordion (her 6 questions), final Clarity Call CTA
-  - Placeholders clearly marked: testimonials (sample), Book/WhatsApp buttons (not wired), "DEMO PREVIEW" banner up top
-  - Curated 7 images copied to `demo/images/`
-  - Previewed locally in browser ✅
-- ⬜ **To deploy free (24-hr preview):** Netlify Drop (drag `demo/` folder → instant *.netlify.app link, no account/card) OR GitHub Pages (new repo → push → enable Pages). No domain purchase needed.
+### 2026-07-13 (evening) — Full multi-page DEMO built
+- ✅ Expanded demo from 1 page → **full multi-page site** in `demo/`:
+  - `index.html` (Home), `about.html`, `services.html`, `hypnotherapy.html` (detailed service template), `blog.html`
+  - Shared `styles.css` + `script.js` (scroll-reveal, mobile menu)
+  - Premium wellness design: palette (forest/sage/beige/ivory/gold) + Playfair Display + Poppins (free Google Fonts)
+  - Real content: her hero copy, photos, credential trust strip, 6 services, About story + timeline + credential grid, Dhruva authority quote + event photos, FAQ (her 6 questions), Clarity Call CTA ending EVERY page (per brief)
+- ✅ **Honored client's SEO "constitution":** every page has meta title + meta description + H1/H2/H3 + image alt text; added JSON-LD schema (LocalBusiness on Home, Service on hypnotherapy), `robots.txt`, `sitemap.xml`
+- ✅ Clearly marked demo status: "DEMO PREVIEW" banner + inline notes on placeholders (testimonials sample, pricing/booking TBC)
+- ✅ **Git repo initialized** at project root + first commit `7e2a7a4`; `.gitignore` excludes `assets/raw/` (private client originals kept OUT of any public repo)
+- ✅ Added `README.md`
+- ⏳ **GitHub Pages deploy PENDING** — `gh` CLI installed (v2.92) but NOT logged in; needs one-time `gh auth login` (interactive) before I can create the new repo + push + enable Pages
+- ⚠️ **Privacy note:** free GitHub Pages needs a PUBLIC repo → her photos + appreciation letter would be publicly visible. Options: (a) accept (photos appear on the site anyway), (b) use Netlify Drop instead (no public repo), (c) GitHub Pro for private-repo Pages. Decision pending.
+
+### TODO / Next
+- [ ] Decide deploy route (GitHub Pages public vs Netlify Drop) + get live preview URL for client
+- [ ] After deploy: replace `SITE_URL`/`SITEMAP_URL_PLACEHOLDER` in sitemap.xml + robots.txt with real URL
+- [ ] Client to confirm: services + pricing, domain, LinkedIn posts (blog), videos, testimonials, logo, award title
 
 ### 2026-07-13
 - ✅ Client sent authority material via WhatsApp (headshots, credentials, appreciation letter, event photos)
