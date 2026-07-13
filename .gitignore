@@ -1,0 +1,8 @@
+# Private client originals — do NOT publish these to a public repo
+assets/raw/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.log
+node_modules/
