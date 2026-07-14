@@ -277,6 +277,16 @@ Premium **wellness brand** feel — NOT bright colours. Colours must communicate
 - ⏳ **GitHub Pages deploy PENDING** — `gh` CLI installed (v2.92) but NOT logged in; needs one-time `gh auth login` (interactive) before I can create the new repo + push + enable Pages
 - ⚠️ **Privacy note:** free GitHub Pages needs a PUBLIC repo → her photos + appreciation letter would be publicly visible. Options: (a) accept (photos appear on the site anyway), (b) use Netlify Drop instead (no public repo), (c) GitHub Pro for private-repo Pages. Decision pending.
 
+### 2026-07-14 (later) — FULL SITE per client brief ✅
+- ✅ Built **6 detailed service pages** (all with own meta, H1/H2/H3, alt text, Service schema, Clarity Call CTA): hypnotherapy, past-life-regression, trauma-recovery, narcissistic-abuse-recovery, group-psychotherapy, life-coaching
+- ✅ Built **Self-Assessment Quiz** (`quiz.html`) — real working interactive 6-question quiz, scores + recommends a service + CTA (client explicitly requested)
+- ✅ Built **Testimonials page** (`testimonials.html`) — video + written + Google Reviews sections (exactly as brief listed; placeholders until real content)
+- ✅ Built **Contact/Booking page** (`contact.html`) — Calendly embed placeholder + WhatsApp + call + email + Google Map placeholder + lead-capture form (demo)
+- ✅ Wired all service-card links (Home + Services → individual pages); added Quiz to nav + Testimonials/Contact to footers across all pages; booking CTAs → contact.html
+- ✅ Updated `sitemap.xml` to all 13 pages; redeployed to gh-pages; **all 13 pages verified live 200 OK**
+- 🟢 Site now covers her brief: Home, About, 6 Services, Blog, Quiz, Testimonials, FAQ, Booking — SEO on every page (meta/headings/alt/schema/sitemap/robots), premium palette+fonts, mobile responsive, Clarity Call CTA on every page
+- ⏳ Pending REAL content from client to replace placeholders: service pricing, videos, testimonials, Google reviews, Calendly link, WhatsApp/phone/email, logo, LinkedIn posts (blog), domain
+
 ### 2026-07-14 — DEPLOYED LIVE ✅
 - ✅ Created NEW public repo **github.com/dineshnarreddy/shanthi-akula-website** (via API using stored git credential — no separate gh login needed)
 - ✅ Pushed full project to `master`; published `demo/` to `gh-pages` branch (root)
