@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book a Free Clarity Call | Shanthi Akula — Hyderabad</title>
+<meta name="description" content="Book your free 20-minute clarity call with Shanthi Akula, Consultant Psychologist & Healing Therapist in Hyderabad. Call, WhatsApp or schedule online." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .booking-box{background:#fff;border:1px solid rgba(31,61,49,.1);border-radius:var(--radius);padding:0;overflow:hidden;box-shadow:var(--shadow)}
+  .calendly-ph{aspect-ratio:4/3;background:linear-gradient(160deg,var(--sage-soft),var(--ivory));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;color:var(--forest)}
+  .calendly-ph .cal-ic{font-size:2.4rem;margin-bottom:10px}
+  .info-row{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}
+  .info-row .ic{width:44px;height:44px;border-radius:12px;background:var(--sage-soft);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+  .info-row h3{font-size:1rem;margin-bottom:2px}
+  .info-row p{color:var(--muted);font-size:.92rem}
+  .lead-form{background:var(--forest-deep);color:#fff;border-radius:var(--radius);padding:30px}
+  .lead-form h3{color:#fff;font-size:1.3rem;margin-bottom:8px}
+  .lead-form p{color:#c9d1c6;font-size:.92rem;margin-bottom:18px}
+  .lead-form input,.lead-form textarea{width:100%;padding:13px 15px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-family:'Poppins';font-size:.95rem;margin-bottom:12px}
+  .lead-form input::placeholder,.lead-form textarea::placeholder{color:#9fb0a4}
+  .map-ph{aspect-ratio:16/6;background:linear-gradient(160deg,var(--sage),var(--forest));border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:#fff;margin-top:40px;box-shadow:var(--shadow)}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="demo-flag">Preview / Demo build — <b>not live yet</b> · for approval only</div>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">Shanthi<span>.</span> Akula</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="contact.html" class="btn ghost" style="padding:10px 20px">Book a Call</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Book a Call</div>
+    <div class="eyebrow">Free · 20 Minutes · No Pressure</div>
+    <h1>Book Your Free Clarity Call</h1>
+    <p>A warm, honest conversation about where you are and how healing could look for you. Choose whatever feels easiest below.</p>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap contact-grid">
+    <!-- Booking -->
+    <div class="fade">
+      <div class="booking-box">
+        <div class="calendly-ph">
+          <div class="cal-ic">📅</div>
+          <h3 style="font-size:1.2rem;margin-bottom:6px">Schedule online</h3>
+          <p style="color:var(--muted);font-size:.9rem;max-width:32ch">Shanthi's live Calendly booking calendar will be embedded here — pick a time that suits you.</p>
+        </div>
+      </div>
+      <div class="map-ph fade">📍 Google Map — location to be added</div>
+    </div>
+
+    <!-- Contact + lead form -->
+    <div class="fade">
+      <div class="info-row"><div class="ic">📞</div><div><h3>Call directly</h3><p>Phone number to be added</p></div></div>
+      <div class="info-row"><div class="ic">💬</div><div><h3>WhatsApp</h3><p>Quick questions? Chat on WhatsApp — link to be connected.</p></div></div>
+      <div class="info-row"><div class="ic">✉️</div><div><h3>Email</h3><p>Email address to be added</p></div></div>
+      <div class="info-row"><div class="ic">📍</div><div><h3>Location</h3><p>Hyderabad, India · in-person &amp; online sessions</p></div></div>
+
+      <div class="lead-form">
+        <h3>Prefer we reach out?</h3>
+        <p>Leave your details and Shanthi's team will contact you to arrange your free clarity call.</p>
+        <form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block';">
+          <input type="text" placeholder="Your name" required>
+          <input type="tel" placeholder="Phone / WhatsApp" required>
+          <textarea placeholder="What would you like help with? (optional)" rows="3"></textarea>
+          <button type="submit" class="btn light" style="width:100%;justify-content:center">Request My Free Call</button>
+          <p class="ok" style="display:none;color:var(--gold-soft);margin-top:12px;text-align:center;font-size:.9rem">✓ Thank you! (Demo only — form will connect to email/WhatsApp on the live site.)</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand"><div class="brand">Shanthi<span style="color:var(--gold)">.</span> Akula</div><p style="max-width:34ch;color:#96a094">Consultant Psychologist &amp; Healing Therapist. Helping you heal the root cause — through hypnotherapy, regression &amp; neuroscience-informed care.</p></div>
+    <div><h4>Explore</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="quiz.html">Self-Assessment Quiz</a><a href="testimonials.html">Testimonials</a></div>
+    <div><h4>Connect</h4><a href="contact.html">Book a Clarity Call</a><a href="#">WhatsApp</a><a href="#">Instagram</a><a href="#">LinkedIn</a><span style="color:#6f7a6c;font-size:.82rem">Hyderabad, India</span></div>
+  </div>
+  <div class="foot-bottom">© 2026 Shanthi Akula · Demo preview build · Content &amp; contact details to be finalised</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
