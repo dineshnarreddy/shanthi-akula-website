@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Free Self-Assessment Quiz — Where Are You Right Now? | Shanthi Akula</title>
+<meta name="description" content="Take Shanthi Akula's free 2-minute self-assessment to understand where you are emotionally and which healing path may suit you best. Private and instant." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .quiz-wrap{max-width:720px;margin:0 auto}
+  .progress{height:6px;background:var(--sage-soft);border-radius:100px;overflow:hidden;margin-bottom:30px}
+  .progress .bar{height:100%;background:var(--gold);width:0;transition:.4s}
+  .q-card{background:#fff;border:1px solid rgba(31,61,49,.1);border-radius:var(--radius);padding:34px 32px;box-shadow:var(--shadow)}
+  .q-step{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:10px}
+  .q-text{font-family:'Playfair Display';font-size:1.5rem;color:var(--forest-deep);margin-bottom:24px;line-height:1.25}
+  .opt{display:block;width:100%;text-align:left;background:var(--ivory);border:1px solid rgba(31,61,49,.12);border-radius:12px;padding:15px 18px;margin-bottom:12px;font-family:'Poppins';font-size:.98rem;color:var(--ink);cursor:pointer;transition:.18s}
+  .opt:hover{border-color:var(--gold);background:#fff;transform:translateX(3px)}
+  .q-nav{display:flex;justify-content:space-between;margin-top:8px}
+  .q-back{background:none;border:none;color:var(--muted);cursor:pointer;font-family:'Poppins';font-size:.9rem}
+  .q-back:hover{color:var(--forest)}
+  .result{background:#fff;border:1px solid rgba(31,61,49,.1);border-radius:var(--radius);padding:40px 34px;box-shadow:var(--shadow);text-align:center;display:none}
+  .result .score-ring{width:120px;height:120px;border-radius:50%;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display';font-size:2rem;font-weight:700;color:#fff}
+  .result h2{font-size:1.9rem;margin-bottom:12px}
+  .result p{color:var(--muted);margin-bottom:10px}
+  .rec{background:var(--sage-soft);border-radius:14px;padding:22px;margin:22px 0;text-align:left}
+  .rec h3{font-size:1.1rem;margin-bottom:6px}
+  .rec p{color:var(--forest);font-size:.94rem;margin:0}
+  .disclaim{font-size:.78rem;color:var(--muted);margin-top:18px}
+</style>
+</head>
+<body>
+<div class="demo-flag">Preview / Demo build — <b>not live yet</b> · for approval only</div>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">Shanthi<span>.</span> Akula</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="quiz.html" class="active">Quiz</a>
+      <a href="index.html#book" class="btn ghost" style="padding:10px 20px">Book a Call</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Self-Assessment</div>
+    <div class="eyebrow">Free · 2 Minutes · Private</div>
+    <h1>Where Are You Right Now?</h1>
+    <p>A gentle self-assessment to help you understand how you're really doing — and which path to healing may suit you best. Your answers stay on your device.</p>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap quiz-wrap">
+    <div class="progress"><div class="bar" id="bar"></div></div>
+
+    <div class="q-card" id="card">
+      <div class="q-step" id="step">Question 1 of 6</div>
+      <div class="q-text" id="qtext">Loading…</div>
+      <div id="opts"></div>
+      <div class="q-nav"><button class="q-back" id="back" style="visibility:hidden">← Back</button><span></span></div>
+    </div>
+
+    <div class="result" id="result">
+      <div class="score-ring" id="ring">—</div>
+      <h2 id="rtitle">Your result</h2>
+      <p id="rdesc"></p>
+      <div class="rec"><h3 id="rrec-title">A suggested next step</h3><p id="rrec"></p></div>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px">
+        <a href="index.html#book" class="btn">📅 Book a Free Clarity Call</a>
+        <button class="btn ghost" onclick="location.reload()">↺ Retake</button>
+      </div>
+      <p class="disclaim">This self-assessment is for reflection and guidance only. It is not a diagnosis or a substitute for professional medical or mental-health care. In an emergency, please contact local services.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold-soft)">Your next step</div>
+    <h2>Still wondering whether this is right for you?</h2>
+    <p>Book a free 20-minute Clarity Call. No pressure — just a warm, honest conversation about where you are and how healing could look for you.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="index.html#book" class="btn light">📅 Book a Free Clarity Call</a>
+      <a href="#" class="btn outline-light">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand"><div class="brand">Shanthi<span style="color:var(--gold)">.</span> Akula</div><p style="max-width:34ch;color:#96a094">Consultant Psychologist &amp; Healing Therapist. Helping you heal the root cause — through hypnotherapy, regression &amp; neuroscience-informed care.</p></div>
+    <div><h4>Explore</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="quiz.html">Self-Assessment Quiz</a><a href="testimonials.html">Testimonials</a></div>
+    <div><h4>Connect</h4><a href="contact.html">Book a Clarity Call</a><a href="#">WhatsApp</a><a href="#">Instagram</a><a href="#">LinkedIn</a><span style="color:#6f7a6c;font-size:.82rem">Hyderabad, India</span></div>
+  </div>
+  <div class="foot-bottom">© 2026 Shanthi Akula · Demo preview build · Content &amp; contact details to be finalised</div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+const QUESTIONS = [
+  {q:"How often do you feel overwhelmed by stress or anxiety?", a:[["Rarely — I feel mostly calm",0],["Sometimes, in busy periods",1],["Often — it's hard to switch off",2],["Almost every day",3]]},
+  {q:"Do you notice the same patterns repeating in your life or relationships?", a:[["No, not really",0],["Occasionally",1],["Yes, and it frustrates me",2],["Yes — it feels like a cycle I can't break",3]]},
+  {q:"How connected do you feel to yourself and your emotions?", a:[["Very connected",0],["Mostly connected",1],["Somewhat numb or distant",2],["Disconnected / 'not myself'",3]]},
+  {q:"Is there a past experience that still affects how you feel today?", a:[["No",0],["A little",1],["Yes, noticeably",2],["Yes — it weighs on me often",3]]},
+  {q:"How would you describe your confidence and boundaries right now?", a:[["Strong and clear",0],["Generally okay",1],["Often shaky",2],["I struggle to hold them",3]]},
+  {q:"What are you most hoping for right now?", a:[["Growth and direction",0],["More calm and balance",1],["To heal something specific",2],["To feel like myself again",3]]}
+];
+let idx=0, score=0, history=[];
+const card=document.getElementById('card'), result=document.getElementById('result');
+function render(){
+  const item=QUESTIONS[idx];
+  document.getElementById('step').textContent=`Question ${idx+1} of ${QUESTIONS.length}`;
+  document.getElementById('qtext').textContent=item.q;
+  document.getElementById('bar').style.width=((idx)/QUESTIONS.length*100)+'%';
+  document.getElementById('back').style.visibility= idx>0 ? 'visible':'hidden';
+  const opts=document.getElementById('opts'); opts.innerHTML='';
+  item.a.forEach(([label,val])=>{
+    const b=document.createElement('button'); b.className='opt'; b.textContent=label;
+    b.onclick=()=>{ history.push(val); score+=val; idx++; if(idx<QUESTIONS.length){render();} else {finish();} };
+    opts.appendChild(b);
+  });
+}
+document.getElementById('back').onclick=()=>{ if(idx>0){ idx--; score-=history.pop(); render(); } };
+function finish(){
+  document.getElementById('bar').style.width='100%';
+  card.style.display='none'; result.style.display='block';
+  const max=QUESTIONS.length*3, pct=Math.round(score/max*100);
+  const ring=document.getElementById('ring');
+  let title,desc,recTitle,rec,color;
+  if(score<=5){ color='#4f7a5c'; title="You're in a steady place 🌿"; desc="You're coping well overall. This can be a wonderful time to grow, build resilience and go deeper.";
+    recTitle="Suggested: Life Coaching & NLP"; rec="Future-focused coaching to build emotional intelligence, clarity and direction from a strong foundation.";}
+  else if(score<=10){ color='#c2a24d'; title="You're carrying more than you let on"; desc="You're managing, but stress and old patterns are taking a quiet toll. Gentle support could make a real difference.";
+    recTitle="Suggested: Hypnotherapy"; rec="Work with the subconscious to release stress, reframe beliefs and restore a sense of calm and balance.";}
+  else if(score<=14){ color='#b0713f'; title="Something deeper is asking to be heard"; desc="Recurring patterns or past experiences seem to be affecting your present. Root-level healing is likely to help.";
+    recTitle="Suggested: Past Life Regression or Trauma Recovery"; rec="Gently explore and release the roots of what keeps repeating, so it no longer shapes your daily life.";}
+  else { color='#8a4b3a'; title="You deserve real support right now"; desc="You're carrying a heavy load, and you don't have to do it alone. Compassionate, trauma-informed help is available.";
+    recTitle="Suggested: Trauma Recovery / Narcissistic Abuse Recovery"; rec="A safe, supported path to process painful experiences and rebuild your confidence, boundaries and sense of self.";}
+  ring.style.background=color; ring.textContent=pct+'%';
+  document.getElementById('rtitle').textContent=title;
+  document.getElementById('rdesc').textContent=desc;
+  document.getElementById('rrec-title').textContent=recTitle;
+  document.getElementById('rrec').textContent=rec;
+}
+render();
+</script>
+</body>
+</html>

@@ -277,8 +277,19 @@ Premium **wellness brand** feel — NOT bright colours. Colours must communicate
 - ⏳ **GitHub Pages deploy PENDING** — `gh` CLI installed (v2.92) but NOT logged in; needs one-time `gh auth login` (interactive) before I can create the new repo + push + enable Pages
 - ⚠️ **Privacy note:** free GitHub Pages needs a PUBLIC repo → her photos + appreciation letter would be publicly visible. Options: (a) accept (photos appear on the site anyway), (b) use Netlify Drop instead (no public repo), (c) GitHub Pro for private-repo Pages. Decision pending.
 
+### 2026-07-14 — DEPLOYED LIVE ✅
+- ✅ Created NEW public repo **github.com/dineshnarreddy/shanthi-akula-website** (via API using stored git credential — no separate gh login needed)
+- ✅ Pushed full project to `master`; published `demo/` to `gh-pages` branch (root)
+- ✅ GitHub Pages LIVE + verified all pages 200 OK + HTTPS (SSL ✅):
+  - **🌐 LIVE PREVIEW: https://agriedgeai.me/shanthi-akula-website/**
+  - (served under existing agriedgeai.me Pages domain; also github.io path redirects here)
+- ✅ Updated `sitemap.xml` + `robots.txt` with real live URLs and re-deployed
+- ⚠️ Preview URL sits under the **agriedgeai.me** (agri business) domain — fine for a temporary "look & feel" preview; will move to a proper domain (e.g. shanthiakula.com) once client approves & we register it
+- ⚠️ Repo is PUBLIC (client consented) — her photos, appreciation letter & LinkedIn cert screenshots are now publicly visible in the repo. `assets/raw/` originals excluded via .gitignore. Can trim `assets/credentials/` from repo later if desired.
+
 ### TODO / Next
-- [ ] Decide deploy route (GitHub Pages public vs Netlify Drop) + get live preview URL for client
+- [ ] Send live link to client for approval
+- [ ] After approval: register real domain + point Pages there (clean URL + proper SSL cert)
 - [ ] After deploy: replace `SITE_URL`/`SITEMAP_URL_PLACEHOLDER` in sitemap.xml + robots.txt with real URL
 - [ ] Client to confirm: services + pricing, domain, LinkedIn posts (blog), videos, testimonials, logo, award title
 
