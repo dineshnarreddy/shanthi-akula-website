@@ -131,6 +131,52 @@ Narcissistic Abuse Recovery · Trauma Recovery · Gestalt Psychotherapy · Accep
 
 ---
 
+## 4B. ✅ CONFIRMED CLIENT DETAILS (received 2026-07-14) — SINGLE SOURCE OF TRUTH
+
+> These are HER exact words/data. Do NOT invent alternatives. Do NOT ask for these again.
+
+### Business
+- **Business name:** Shanthi Akula | Hypnotherapy, Past Life Regression Therapy & Life Coaching
+- **Domain:** **shanthiakula.com** — ⚠️ ALREADY PURCHASED by client (do NOT ask about domain)
+- **Address:** Vertex Pride Apartments, C Block, Flat No. 205, Nizampet Cross Roads, Jai Bharat Nagar, Hyderabad – 500085
+- **Call / WhatsApp:** 7685839999
+- **Email:** Shanthiakula.official@gmail.com
+- **Google Business Profile:** https://share.google/g7lPsy5iAiE5PE8GE (also https://share.google/GMcbY2ICmYauFLCpI)
+
+### Social (wants a "Connect With Shanthi" section + icons in footer of EVERY page, open in NEW TAB, professional icons)
+- Instagram: https://www.instagram.com/shanthi_akula_
+- Facebook: https://www.facebook.com/share/1BmEgJ2Szt/
+- LinkedIn: https://www.linkedin.com/in/shanthi-akula-therapist-lifecoach
+- Google Business: https://share.google/GMcbY2ICmYauFLCpI
+
+### High-res photos (use these, not the compressed WhatsApp ones)
+- Google Drive: https://drive.google.com/drive/folders/14B98drKQXn48OFgSZ6IdACJW1NT_A8Gd
+
+### PRICING RULE (CRITICAL)
+- ❌ **Do NOT mention any pricing anywhere on the website.**
+- ✅ Instead use CTA everywhere: **"📞 Book a FREE 15–20 Minute Clarity Call"**
+- Focus = drive clarity-call bookings, not show prices.
+
+### SERVICES — HER EXACT STRUCTURE & COPY (section title: "How Shanthi Can Help You Heal?")
+1. 💔 **Recover from Narcissistic Abuse** — *Heal from gaslighting, emotional manipulation, trauma bonding, and toxic relationships.*
+2. 🌿 **Heal Childhood Trauma & Emotional Wounds** — *Release the emotional pain that's still influencing your present.*
+3. 🧸 **Heal Your Inner Child** — *Transform old emotional patterns into self-confidence and self-love.*
+4. ❤️ **Break Unhealthy Relationship Patterns** — *Stop repeating the same painful relationship cycles.*
+5. 🧠 **Hypnotherapy for Anxiety, Stress & Emotional Healing** — *Calm your mind. Heal from within. Create lasting emotional change.*
+6. 🌟 **Life Coaching for Confidence, Clarity & Emotional Growth** — *Move beyond survival and start creating the life you truly want.*
+7. 🔁 **Past Life Regression Therapy** — bullets: Understand recurring patterns · Find deeper meaning · Experience emotional freedom
+> Full paragraph copy for each is in the client's 2026-07-14 message — must be used verbatim (not paraphrased).
+
+### Still pending FROM client
+- LinkedIn post content (she said: coming tomorrow) → for blog
+- Videos (service-page videos + video testimonials) — not yet sent
+- Written testimonials + permission — not yet sent
+- Calendly booking link (or confirm booking via call/WhatsApp only)
+- The Client Clarity Guide content (lead magnet)
+- Award title confirmation (World Environment Protection Commission)
+
+---
+
 ## 5. SEO Requirements (EXTREMELY IMPORTANT — do not skip any)
 
 Every page needs:
@@ -276,6 +322,15 @@ Premium **wellness brand** feel — NOT bright colours. Colours must communicate
 - ✅ Added `README.md`
 - ⏳ **GitHub Pages deploy PENDING** — `gh` CLI installed (v2.92) but NOT logged in; needs one-time `gh auth login` (interactive) before I can create the new repo + push + enable Pages
 - ⚠️ **Privacy note:** free GitHub Pages needs a PUBLIC repo → her photos + appreciation letter would be publicly visible. Options: (a) accept (photos appear on the site anyway), (b) use Netlify Drop instead (no public repo), (c) GitHub Pro for private-repo Pages. Decision pending.
+
+### 2026-07-14 — QA PASS ✅ (pre-client check)
+- ✅ Deploy confirmed in sync: `master:demo` tree == `gh-pages` root tree (identical hash)
+- ✅ Automated link audit (all 13 pages): **279 internal links/assets OK, 0 broken, 0 missing images**
+- ✅ Fixed CTA routing: ALL "Book a Free Clarity Call" + "Chat on WhatsApp" buttons now go to `contact.html` (were dead `#` or scrolled to a home section) — no dead primary buttons
+- ✅ JS syntax check: `script.js` OK, quiz logic OK
+- ✅ All 13 pages verified live 200 OK + assets (css/js/sitemap/robots/images) 200
+- ⚠️ Remaining intentional placeholders (need client's real URLs, cannot work until then): footer **WhatsApp / Instagram / LinkedIn** links + testimonials **"Read on Google"** button
+- Live: https://agriedgeai.me/shanthi-akula-website/
 
 ### 2026-07-14 (later) — FULL SITE per client brief ✅
 - ✅ Built **6 detailed service pages** (all with own meta, H1/H2/H3, alt text, Service schema, Clarity Call CTA): hypnotherapy, past-life-regression, trauma-recovery, narcissistic-abuse-recovery, group-psychotherapy, life-coaching
